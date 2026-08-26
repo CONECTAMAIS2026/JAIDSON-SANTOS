@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaidson Santos | Pinturas Residenciais e Prediais</title>
+<meta name="description" content="Jaidson Santos - Pinturas residenciais e prediais, texturas, grafiato, pintura decorativa e revitalização de ambientes.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f8fa;color:#172033;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1150px;margin:auto}
+
+/* HEADER */
+header{background:#101c33;color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:18px;letter-spacing:.4px}
+.logo span{display:block;color:#f28c28;font-size:12px;margin-top:2px}
+nav{display:flex;gap:24px;font-size:14px}
+nav a:hover{color:#f28c28}
+
+/* HERO */
+.hero{min-height:650px;display:flex;align-items:center;color:white;position:relative;overflow:hidden;
+background:linear-gradient(110deg,#101c33 0%,#182c4d 60%,#24476b 100%)}
+.hero:after{content:"";position:absolute;width:420px;height:420px;background:#f28c28;border-radius:50%;right:-160px;top:-130px;opacity:.13}
+.hero-content{position:relative;z-index:2;max-width:700px;padding:80px 0}
+.badge{display:inline-block;background:rgba(242,140,40,.15);border:1px solid rgba(242,140,40,.5);color:#ffad58;padding:7px 14px;border-radius:30px;font-size:13px;margin-bottom:20px}
+.hero h1{font-size:clamp(38px,7vw,68px);line-height:1.05;margin-bottom:20px}
+.hero h1 span{color:#f28c28}
+.hero p{font-size:18px;color:#dce5f1;max-width:620px;margin-bottom:30px}
+.btn{display:inline-block;background:#f28c28;color:white;padding:14px 23px;border-radius:8px;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:#dc7718}
+.btn-outline{margin-left:10px;background:transparent;border:1px solid #fff}
+
+/* SECTIONS */
+section{padding:80px 0}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title small{color:#f28c28;font-weight:700;text-transform:uppercase;letter-spacing:1.5px}
+.section-title h2{font-size:36px;margin-top:8px;color:#101c33}
+
+/* SERVICES */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:28px;border-radius:14px;border:1px solid #e6e9ef;box-shadow:0 8px 25px rgba(16,28,51,.06);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(16,28,51,.1)}
+.icon{width:50px;height:50px;background:#fff0e2;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
+.card h3{margin-bottom:8px;color:#101c33}
+.card p{color:#687386;font-size:14px}
+
+/* ABOUT */
+.about{background:#101c33;color:white}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about h2{font-size:38px;margin:10px 0 18px}
+.about p{color:#cbd5e1}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}
+.feature{padding:18px;background:rgba(255,255,255,.06);border-radius:10px}
+.feature strong{display:block;color:#fff;margin-bottom:4px}
+.feature span{font-size:13px;color:#b9c5d6}
+
+/* GALLERY PLACEHOLDER */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-box{height:210px;border-radius:14px;background:linear-gradient(135deg,#dfe5ec,#f7f8fa);display:flex;align-items:center;justify-content:center;color:#7a8595;text-align:center;padding:20px;border:1px dashed #b8c1cd}
+.gallery-box span{font-size:14px}
+
+/* CONTACT */
+.contact{background:#f0f3f7}
+.contact-box{background:white;border-radius:18px;padding:45px;display:grid;grid-template-columns:1fr 1fr;gap:40px;box-shadow:0 10px 35px rgba(16,28,51,.07)}
+.contact h2{font-size:34px;color:#101c33;margin-bottom:12px}
+.contact p{color:#687386}
+.info{margin-top:25px}
+.info-item{display:flex;gap:12px;margin:16px 0}
+.info-item b{display:block;color:#101c33}
+.info-item span{font-size:14px;color:#687386}
+.whatsapp{background:#1fbd5b;color:white;padding:17px 22px;border-radius:9px;display:inline-block;font-weight:700;margin-top:20px}
+.whatsapp:hover{background:#159c48}
+
+/* FOOTER */
+footer{background:#0a1324;color:#aeb9c9;padding:30px 0;text-align:center;font-size:13px}
+footer strong{color:white}
+
+/* MOBILE */
+@media(max-width:800px){
+nav{display:none}
+.hero{min-height:600px}
+.hero-content{padding:65px 0}
+.services,.gallery{grid-template-columns:1fr}
+.about-grid,.contact-box{grid-template-columns:1fr}
+.features{grid-template-columns:1fr}
+.contact-box{padding:30px}
+section{padding:65px 0}
+.section-title h2{font-size:30px}
+.btn{display:block;text-align:center;width:100%;margin:8px 0}
+.btn-outline{margin-left:0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="#">
+JAIDSON SANTOS
+<span>PINTURAS RESIDENCIAIS E PREDIAIS</span>
+</a>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+<div class="container">
+<div class="hero-content">
+<div class="badge">🎨 Pintura • Acabamento • Revitalização</div>
+<h1>Transforme seu ambiente com <span>qualidade.</span></h1>
+<p>Serviços de pintura residencial e predial, com organização, cuidado e atenção aos detalhes para valorizar cada projeto.</p>
+<a class="btn" href="https://wa.me/5561993925642" target="_blank">Solicitar orçamento pelo WhatsApp</a>
+<a class="btn btn-outline" href="#servicos">Conhecer serviços</a>
+</div>
+</div>
+</section>
+
+<section id="servicos">
+<div class="container">
+<div class="section-title">
+<small>Nossos serviços</small>
+<h2>Soluções para transformar seu espaço</h2>
+</div>
+
+<div class="services">
+<div class="card"><div class="icon">🖌️</div><h3>Pintura Interna</h3><p>Acabamento profissional para renovar e valorizar ambientes internos.</p></div>
+<div class="card"><div class="icon">🏠</div><h3>Pintura Externa</h3><p>Renovação e acabamento para áreas externas de imóveis.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Aplicação de Texturas</h3><p>Texturas para criar ambientes personalizados e cheios de personalidade.</p></div>
+<div class="card"><div class="icon">🧱</div><h3>Grafiato</h3><p>Aplicação de grafiato para um acabamento moderno e diferenciado.</p></div>
+<div class="card"><div class="icon">✨</div><h3>Pintura Decorativa</h3><p>Detalhes e acabamentos decorativos para deixar cada espaço único.</p></div>
+<div class="card"><div class="icon">🔨</div><h3>Revitalização de Ambientes</h3><p>Renovação de espaços através de pintura e novos acabamentos.</p></div>
+</div>
+</div>
+</section>
+
+<section class="about" id="sobre">
+<div class="container about-grid">
+<div>
+<div class="section-title" style="text-align:left;margin-bottom:0">
+<small>Sobre nós</small>
+<h2 style="color:white">Qualidade em cada projeto.</h2>
+</div>
+<p>Oferecemos serviços como pintura interna e externa, aplicação de texturas, grafiato, pintura decorativa e revitalização de ambientes.</p>
+<p style="margin-top:15px">Nosso objetivo é transformar espaços, valorizando cada projeto de acordo com as necessidades e o estilo de cada cliente.</p>
+</div>
+
+<div>
+<p>Prezamos pela organização, limpeza durante a execução e cumprimento dos prazos, sempre buscando a satisfação total dos nossos clientes.</p>
+<div class="features">
+<div class="feature"><strong>✓ Organização</strong><span>Trabalho organizado do início ao fim.</span></div>
+<div class="feature"><strong>✓ Limpeza</strong><span>Cuidado com o ambiente durante o serviço.</span></div>
+<div class="feature"><strong>✓ Compromisso</strong><span>Respeito aos prazos combinados.</span></div>
+<div class="feature"><strong>✓ Detalhes</strong><span>Atenção às necessidades de cada projeto.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<small>Projetos</small>
+<h2>Veja nossos trabalhos</h2>
+</div>
+
+<div class="gallery">
+<div class="gallery-box"><span>📸 Foto de um trabalho<br><br>Adicione uma foto aqui depois.</span></div>
+<div class="gallery-box"><span>📸 Foto de um trabalho<br><br>Adicione uma foto aqui depois.</span></div>
+<div class="gallery-box"><span>📸 Foto de um trabalho<br><br>Adicione uma foto aqui depois.</span></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contato">
+<div class="container">
+<div class="contact-box">
+<div>
+<div class="section-title" style="text-align:left;margin-bottom:0">
+<small>Entre em contato</small>
+<h2>Vamos transformar seu ambiente?</h2>
+</div>
+<p>Entre em contato e solicite seu orçamento. Vamos entender seu projeto e encontrar a melhor solução para o seu espaço.</p>
+<a class="whatsapp" href="https://wa.me/5561993925642" target="_blank">💬 Falar pelo WhatsApp</a>
+</div>
+
+<div class="info">
+<div class="info-item">
+<div>📱</div>
+<div><b>WhatsApp</b><span>(61) 99392-5642</span></div>
+</div>
+
+<div class="info-item">
+<div>🕘</div>
+<div><b>Horário de atendimento</b><span>Todos os dias, das 09:00 às 18:00</span></div>
+</div>
+
+<div class="info-item">
+<div>🎨</div>
+<div><b>Serviços</b><span>Pinturas residenciais e prediais</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<strong>JAIDSON SANTOS — PINTURAS RESIDENCIAIS E PREDIAIS</strong>
+<br>
+Pintura, acabamento e revitalização de ambientes.
+<br><br>
+© 2026 Jaidson Santos. Todos os direitos reservados.
+</div>
+</footer>
+
+</body>
+</html>
