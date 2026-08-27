@@ -294,27 +294,20 @@ grid-template-columns:repeat(3,1fr);
 gap:18px
 }
 
-.gallery-box{
-height:210px;
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
 border-radius:14px;
-background:linear-gradient(135deg,#e9edf2,#f7f8fa);
-display:flex;
-align-items:center;
-justify-content:center;
-color:#7a8595;
-text-align:center;
-padding:20px;
-border:2px dashed #b8c1cd;
-transition:.2s
+display:block;
+box-shadow:0 8px 25px rgba(16,28,51,.10);
+transition:.25s;
+cursor:pointer
 }
 
-.gallery-box:hover{
-border-color:#f5c400;
-transform:translateY(-3px)
-}
-
-.gallery-box span{
-font-size:14px
+.gallery img:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(16,28,51,.18)
 }
 
 /* ================= CONTACT ================= */
@@ -363,7 +356,7 @@ font-size:14px;
 color:#687386
 }
 
-/* WHATSAPP */
+/* ================= WHATSAPP ================= */
 
 .whatsapp{
 background:#1fbd5b;
@@ -381,7 +374,7 @@ background:#159c48;
 transform:translateY(-2px)
 }
 
-/* INSTAGRAM */
+/* ================= INSTAGRAM ================= */
 
 .instagram{
 background:#E1306C;
@@ -429,12 +422,18 @@ min-height:600px
 padding:65px 0
 }
 
-.services,
+.services{
+grid-template-columns:1fr
+}
+
 .gallery{
 grid-template-columns:1fr
 }
 
-.about-grid,
+.about-grid{
+grid-template-columns:1fr
+}
+
 .contact-box{
 grid-template-columns:1fr
 }
@@ -476,6 +475,10 @@ width:100%;
 text-align:center
 }
 
+.gallery img{
+height:250px
+}
+
 }
 
 </style>
@@ -500,11 +503,8 @@ alt="Jaidson Santos - Pinturas Residenciais e Prediais">
 <nav>
 
 <a href="#inicio">Início</a>
-
 <a href="#servicos">Serviços</a>
-
 <a href="#sobre">Sobre</a>
-
 <a href="#contato">Contato</a>
 
 </nav>
@@ -577,75 +577,39 @@ Soluções para transformar seu espaço
 <div class="services">
 
 <div class="card">
-
 <div class="icon">🖌️</div>
-
 <h3>Pintura Interna</h3>
-
-<p>
-Acabamento profissional para renovar e valorizar ambientes internos.
-</p>
-
+<p>Acabamento profissional para renovar e valorizar ambientes internos.</p>
 </div>
 
 <div class="card">
-
 <div class="icon">🏠</div>
-
 <h3>Pintura Externa</h3>
-
-<p>
-Renovação e acabamento para áreas externas de imóveis.
-</p>
-
+<p>Renovação e acabamento para áreas externas de imóveis.</p>
 </div>
 
 <div class="card">
-
 <div class="icon">🎨</div>
-
 <h3>Aplicação de Texturas</h3>
-
-<p>
-Texturas para criar ambientes personalizados e cheios de personalidade.
-</p>
-
+<p>Texturas para criar ambientes personalizados e cheios de personalidade.</p>
 </div>
 
 <div class="card">
-
 <div class="icon">🧱</div>
-
 <h3>Grafiato</h3>
-
-<p>
-Aplicação de grafiato para um acabamento moderno e diferenciado.
-</p>
-
+<p>Aplicação de grafiato para um acabamento moderno e diferenciado.</p>
 </div>
 
 <div class="card">
-
 <div class="icon">✨</div>
-
 <h3>Pintura Decorativa</h3>
-
-<p>
-Detalhes e acabamentos decorativos para deixar cada espaço único.
-</p>
-
+<p>Detalhes e acabamentos decorativos para deixar cada espaço único.</p>
 </div>
 
 <div class="card">
-
 <div class="icon">🔨</div>
-
 <h3>Revitalização de Ambientes</h3>
-
-<p>
-Renovação de espaços através de pintura e novos acabamentos.
-</p>
-
+<p>Renovação de espaços através de pintura e novos acabamentos.</p>
 </div>
 
 </div>
@@ -693,43 +657,23 @@ Prezamos pela organização, limpeza durante a execução e cumprimento dos praz
 <div class="features">
 
 <div class="feature">
-
 <strong>✓ Organização</strong>
-
-<span>
-Trabalho organizado do início ao fim.
-</span>
-
+<span>Trabalho organizado do início ao fim.</span>
 </div>
 
 <div class="feature">
-
 <strong>✓ Limpeza</strong>
-
-<span>
-Cuidado com o ambiente durante o serviço.
-</span>
-
+<span>Cuidado com o ambiente durante o serviço.</span>
 </div>
 
 <div class="feature">
-
 <strong>✓ Compromisso</strong>
-
-<span>
-Respeito aos prazos combinados.
-</span>
-
+<span>Respeito aos prazos combinados.</span>
 </div>
 
 <div class="feature">
-
 <strong>✓ Detalhes</strong>
-
-<span>
-Atenção às necessidades de cada projeto.
-</span>
-
+<span>Atenção às necessidades de cada projeto.</span>
 </div>
 
 </div>
@@ -740,7 +684,7 @@ Atenção às necessidades de cada projeto.
 
 </section>
 
-<!-- ================= GALLERY ================= -->
+<!-- ================= PROJECTS ================= -->
 
 <section>
 
@@ -758,35 +702,29 @@ Veja nossos trabalhos
 
 <div class="gallery">
 
-<div class="gallery-box">
+<img src="WhatsApp Image 2026-08-26 at 23.14.28.jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-<span>
-📸 Foto de um trabalho
-<br><br>
-Adicione uma foto aqui depois.
-</span>
+<img src="WhatsApp Image 2026-08-26 at 23.14.29 (1).jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-</div>
+<img src="WhatsApp Image 2026-08-26 at 23.14.29 (2).jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-<div class="gallery-box">
+<img src="WhatsApp Image 2026-08-26 at 23.14.29.jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-<span>
-📸 Foto de um trabalho
-<br><br>
-Adicione uma foto aqui depois.
-</span>
+<img src="WhatsApp Image 2026-08-26 at 23.14.30 (1).jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-</div>
+<img src="WhatsApp Image 2026-08-26 at 23.14.30 (2).jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-<div class="gallery-box">
+<img src="WhatsApp Image 2026-08-26 at 23.14.30 (3).jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-<span>
-📸 Foto de um trabalho
-<br><br>
-Adicione uma foto aqui depois.
-</span>
+<img src="WhatsApp Image 2026-08-26 at 23.14.30.jpeg" alt="Trabalho de pintura Jaidson Santos">
 
-</div>
+<img src="WhatsApp Image 2026-08-26 at 23.14.31 (1).jpeg" alt="Trabalho de pintura Jaidson Santos">
+
+<img src="WhatsApp Image 2026-08-26 at 23.14.31 (2).jpeg" alt="Trabalho de pintura Jaidson Santos">
+
+<img src="WhatsApp Image 2026-08-26 at 23.14.31 (3).jpeg" alt="Trabalho de pintura Jaidson Santos">
+
+<img src="WhatsApp Image 2026-08-26 at 23.14.31.jpeg" alt="Trabalho de pintura Jaidson Santos">
 
 </div>
 
